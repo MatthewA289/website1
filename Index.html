@@ -2,8 +2,50 @@
 <html>
 <head>
 <title>Matthews Website DO NOT DELETE ME</title>
+
+<style>
+figure
+{
+    width:25%;
+    float:left;
+    margin:0px;
+    text-align:center;
+    padding:0px;
+
+}
+</style>
 </head>
 <body>
+
+<script>
+  var askForPassword = prompt("I need a password");
+  if(askForPassword == "matthew143")
+  {
+    window.alert("Sucessful!");
+  }
+  else
+  {
+      var correct = false;
+      for(var counter=0;counter < 9;counter++)
+      {
+        askForPassword = prompt("Please try again");
+        if(askForPassword == "matthew143")
+        {
+          window.alert("Sucessful!");
+          counter = 9;
+          correct = true;
+        }
+
+      }
+      if (!correct)
+      {
+      window.close();
+      }
+  }
+
+
+
+</script>
 
 <h1 align = "center">Matthew A</h1>
 <div>
@@ -13,20 +55,18 @@
 
 <div>
 <h2>here are some of my robots</h2>
-<div>
-<figure style="float: left;">
-<img src="http://www.robotshop.com/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/w/o/wowwee-chip-robot-dog-1.jpg" height="240" width="240">
-<figcaption>This is my favorite robot  </figcaption>
-</figure>
 
-<figure style="float: left;">
-<img src="https://larryfire.files.wordpress.com/2014/12/mip.jpg" height="240" width="240">
-<figcaption>this robot is self balancing </figcaption>
-</figure>
-</div>
-</div>
+  <figure >
+  <img src="http://www.robotshop.com/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/w/o/wowwee-chip-robot-dog-1.jpg" height="240" width="240"/>
+  <figcaption>This is my favorite robot  </figcaption>
+  </figure>
 
-<iframe width="445" height="510" src="https://www.youtube.com/embed/IOBXxVQRBgI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <figure>
+    <img src="https://larryfire.files.wordpress.com/2014/12/mip.jpg" height="240" width="240"/>
+    <figcaption>this robot is self balancing </figcaption>
+  </figure>
+</div>
 
 </body>
 </html>
