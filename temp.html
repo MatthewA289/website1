@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script>
+  var askForPassword = prompt("I need a password");
+  if(askForPassword == "matt289")
+  {
+    window.alert("Sucessful!");
+  }
+  else
+  {
+      var correct = false;
+      for(var counter=0;counter < 9;counter++)
+      {
+        askForPassword = prompt("Please try again");
+        if(askForPassword == "matt289")
+        {
+          window.alert("Sucessful!");
+          counter = 9;
+          correct = true;
+        }
+
+      }
+      if (!correct || askForPassword   =="")
+      {
+      window.close();
+      }
+  }
+
+
+
+</script>
+<div>
+  <a href="Index.html">home</a>
+<a href="temp.html">temp</a>
+</div>
+
+</html>

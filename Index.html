@@ -3,19 +3,27 @@
 <head>
 <title>Matthews Website DO NOT DELETE ME</title>
 
-<style>
-figure
-{
-    width:25%;
-    float:left;
-    margin:0px;
-    text-align:center;
-    padding:0px;
-
-}
-</style>
 </head>
 <body>
+
+<style>
+
+.parallax {
+    /* The image used */
+    background-image: url("game.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<!-- Container element -->
 
 <script>
   var askForPassword = prompt("I need a password");
@@ -47,6 +55,11 @@ figure
 
 </script>
 
+<div>
+  <a href="Index.html">home</a>
+<a href="temp.html">temp</a>
+</div>
+
 <h1 align = "center">Matthew A</h1>
 <div>
 <p>My name is matthew.I like going on my ipad and phone. And I like robots.</p>
@@ -54,8 +67,9 @@ figure
 </div>
 
 <div>
-<h2>here are some of my robots</h2>
 
+<h2>here are some of my robots</h2>
+<div class="parallax"></div>
   <figure >
   <img src="http://www.robotshop.com/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/w/o/wowwee-chip-robot-dog-1.jpg" height="240" width="240"/>
   <figcaption>This is my favorite robot  </figcaption>
